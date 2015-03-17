@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+<ul>
+<% for (var i = 0; i < data.length; i++) { %>
+		<li> <%= data[i].desc %> </li>
+<%	} %>
+</ul>
+
+<form action='/add' method='post'>
+	<input type='text' placeholder='Enter Todo Item' name='newItem'>
+	<input type='submit' >
+</form>
+</div>
+<script type="text/javascript" src="jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
